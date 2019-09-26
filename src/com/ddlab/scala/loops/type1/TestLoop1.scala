@@ -51,12 +51,20 @@ object TestLoop1 {
       println("Value of X : "+x);
   }
   
+  def showLoopIncrementedBy2() {
+    var max: Int = 10;
+    for(i <- 0 until max by 2) {
+      println("Value of I incremented by 2: "+i);
+    }
+  }
+  
   def main(args: Array[String]) {
 //    showLoop1();
 //    showLoop2();
 //    showLoop3();
 //    showLoopForList();
 //    showLoopWithFilters();
-    showYieldUsages();
+//    showYieldUsages();
+    showLoopIncrementedBy2();
   }
 }
